@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "flipmobs",
+	"version": "${version}",
+	"name": "Flip Mobs",
+	"description": "This mod will make all hostile mobs passive and all passive mobs hostile",
+	"authors": [
+		"Flameball"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/flipmobs/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.blocsoc.flipmobs.FlipMobs"
+		],
+		"fabric-datagen": [
+			"net.blocsoc.flipmobs.FlipMobsDataGenerator"
+		],
+		"client": [
+			"net.blocsoc.flipmobs.FlipMobsClient"
+		]
+	},
+	"mixins": [
+		"flipmobs.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
