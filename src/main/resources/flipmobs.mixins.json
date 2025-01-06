@@ -3,7 +3,8 @@
 	"package": "net.blocsoc.flipmobs.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"ZombieEntityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
