@@ -1,0 +1,12 @@
+Mobs that have been successfully altered:
+BreezeEntityMixin: Breeze
+SkeleletonEntityMixin: Bogged, Stray, Skeleton, Wither Skeleton
+ZombieEntityMixin: Zombie, Husk, Drowned
+BlazeEntityMixin: Blaze
+SpiderEntityMixin: Cave Spider, Spider
+CreeperEntityMixin: Creeper
+GuardianEntityMixin: Guardian, Elder Guardian
+EndermanEntityMixin: Enderman
+EndermiteEntityMixin: Endermite
+EvokerEntityMixin: Evoker
+

@@ -4,6 +4,17 @@
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
 		"ExampleMixin",
+		"ZombieEntityMixin",
+		"AbstractSkeletonEntityMixin",
+		"BreezeEntityMixin",
+		"BlazeEntityMixin",
+		"SpiderEntityMixin",
+		"CreeperEntityMixin",
+		"GuardianEntityMixin",
+		"EndermanEntityMixin",
+		"EndermiteEntityMixin",
+		"EvokerEntityMixin",
+		"GhastEntityMixin",
 		"HostileEntityMixin"
 	],
 	"injectors": {

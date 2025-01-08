@@ -10,6 +10,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
@@ -25,12 +26,6 @@ public abstract class HostileEntityMixin extends PathAwareEntity implements Mons
 
     @Inject(method = "isDisallowedInPeaceful", at = @At("HEAD"), cancellable = true)
     protected boolean isDisallowedInPeaceful(CallbackInfoReturnable<Boolean> ci) {
-        ci.cancel();
-        return false;
-    }
-
-    @Inject(method = "isAngryAt", at = @At("HEAD"), cancellable = true)
-    public boolean isAngryAt(ServerWorld world, PlayerEntity player, CallbackInfoReturnable<Boolean> ci){
         ci.cancel();
         return false;
     }
