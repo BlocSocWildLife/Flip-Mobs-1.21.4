@@ -1,6 +1,7 @@
 package net.blocsoc.flipmobs.mixin;
 
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.control.MoveControl;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.data.DataTracker;
@@ -11,6 +12,8 @@ import net.minecraft.entity.mob.FlyingEntity;
 import net.minecraft.entity.mob.GhastEntity;
 import net.minecraft.entity.mob.HostileEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.util.math.MathHelper;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
@@ -34,6 +37,7 @@ public abstract class GhastEntityMixin extends FlyingEntity {
     protected void initGoals(CallbackInfo ci) {
 
         this.goalSelector.add(5, new GhastEntityMixin.FlyRandomlyGoal((FlyingEntity) this));
+        this.goalSelector.add(7, new GhastEntityMixin.LookAtTargetGoal((FlyingEntity) this));
         ci.cancel();
 
     }
@@ -80,6 +84,43 @@ public abstract class GhastEntityMixin extends FlyingEntity {
             double e = this.ghast.getY() + (double)((random.nextFloat() * 2.0F - 1.0F) * 16.0F);
             double f = this.ghast.getZ() + (double)((random.nextFloat() * 2.0F - 1.0F) * 16.0F);
             this.ghast.getMoveControl().moveTo(d, e, f, 1.0);
+        }
+    }
+
+    static class LookAtTargetGoal extends Goal {
+        private final FlyingEntity ghast;
+
+        public LookAtTargetGoal(FlyingEntity ghast) {
+            this.ghast = ghast;
+            this.setControls(EnumSet.of(Goal.Control.LOOK));
+        }
+
+        @Override
+        public boolean canStart() {
+            return true;
+        }
+
+        @Override
+        public boolean shouldRunEveryTick() {
+            return true;
+        }
+
+        @Override
+        public void tick() {
+            if (this.ghast.getTarget() == null) {
+                Vec3d vec3d = this.ghast.getVelocity();
+                this.ghast.setYaw(-((float) MathHelper.atan2(vec3d.x, vec3d.z)) * (180.0F / (float)Math.PI));
+                this.ghast.bodyYaw = this.ghast.getYaw();
+            } else {
+                LivingEntity livingEntity = this.ghast.getTarget();
+                double d = 64.0;
+                if (livingEntity.squaredDistanceTo(this.ghast) < 4096.0) {
+                    double e = livingEntity.getX() - this.ghast.getX();
+                    double f = livingEntity.getZ() - this.ghast.getZ();
+                    this.ghast.setYaw(-((float)MathHelper.atan2(e, f)) * (180.0F / (float)Math.PI));
+                    this.ghast.bodyYaw = this.ghast.getYaw();
+                }
+            }
         }
     }
 
