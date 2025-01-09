@@ -9,4 +9,5 @@ GuardianEntityMixin: Guardian, Elder Guardian
 EndermanEntityMixin: Enderman
 EndermiteEntityMixin: Endermite
 EvokerEntityMixin: Evoker
+GhastEntityMixin: Ghast (technically, the Ghast just has no goals at the moment)
 
