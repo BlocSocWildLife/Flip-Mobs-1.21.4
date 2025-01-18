@@ -15,5 +15,6 @@ IllusionerEntityMixin: Illusioner
 MagmaCubeEntityMixin: MagmaCube
 PhantomEntityMixin: Phantom
 PiglinEntityMixin: Piglin (technically only makes them hold crossbows they can't fire)
+PiglinBruteEntityMixin: PiglinBrute (technically only makes them blind so they can't hit the player)
 SlimeEntityMixin: Slime
 
