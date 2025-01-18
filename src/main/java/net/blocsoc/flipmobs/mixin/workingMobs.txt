@@ -9,9 +9,11 @@ GuardianEntityMixin: Guardian, Elder Guardian
 EndermanEntityMixin: Enderman
 EndermiteEntityMixin: Endermite
 EvokerEntityMixin: Evoker
-GhastEntityMixin: Ghast (technically, the Ghast just has no goals at the moment)
+GhastEntityMixin: Ghast
 HoglinEntityMixin: Hoglin
 IllusionerEntityMixin: Illusioner
 MagmaCubeEntityMixin: MagmaCube
+PhantomEntityMixin: Phantom
+PiglinEntityMixin: Piglin (technically only makes them hold crossbows they can't fire)
 SlimeEntityMixin: Slime
 

@@ -19,6 +19,8 @@
 		"IllusionerEntityMixin",
 		"MagmaCubeEntityMixin",
 		"SlimeEntityMixin",
+		"PhantomEntityMixin",
+		"PiglinEntityMixin",
 		"HostileEntityMixin"
 	],
 	"injectors": {
