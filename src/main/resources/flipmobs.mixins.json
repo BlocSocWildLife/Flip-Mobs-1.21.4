@@ -22,6 +22,17 @@
 		"PhantomEntityMixin",
 		"PiglinEntityMixin",
 		"PiglinBruteEntityMixin",
+		"PillagerEntityMixin",
+		"PolarBearEntityMixin",
+		"RavagerEntityMixin",
+		"ShulkerEntityMixin",
+		"SilverfishEntityMixin",
+		"VexEntityMixin",
+		"WardenEntityMixin",
+		"WitchEntityMixin",
+		"WitherEntityMixin",
+		"ZoglinEntityMixin",
+		"EnderDragonEntityMixin",
 		"HostileEntityMixin"
 	],
 	"injectors": {

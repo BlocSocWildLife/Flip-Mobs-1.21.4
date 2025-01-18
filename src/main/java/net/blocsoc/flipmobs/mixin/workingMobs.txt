@@ -1,7 +1,7 @@
 Mobs that have been successfully altered:
 BreezeEntityMixin: Breeze
 SkeleletonEntityMixin: Bogged, Stray, Skeleton, Wither Skeleton
-ZombieEntityMixin: Zombie, Husk, Drowned
+ZombieEntityMixin: Zombie, Husk, Drowned, Villager
 BlazeEntityMixin: Blaze
 SpiderEntityMixin: Cave Spider, Spider
 CreeperEntityMixin: Creeper
@@ -16,5 +16,17 @@ MagmaCubeEntityMixin: MagmaCube
 PhantomEntityMixin: Phantom
 PiglinEntityMixin: Piglin (technically only makes them hold crossbows they can't fire)
 PiglinBruteEntityMixin: PiglinBrute (technically only makes them blind so they can't hit the player)
+PillagerEntityMixin: Pillager
+PolarBearEntityMixin: PolarBear
+RavagerEntityMixin: Ravager
 SlimeEntityMixin: Slime
+ShulkerEntityMixin: Shulker (just doesn't open or fire)
+SilverfishEntityMixin: Silverfish
+VexEntityMixin: Vex (they don't seem to be visible or hostile so we take those)
+WardenEntityMixin: Warden
+WitchEntityMixin: Witch
+WitherEntityMixin: Wither
+ZoglinEntityMixin: Zoglin
+??: Zombie Piglin
+EnderDragonEntityMixin: EnderDragon
 
