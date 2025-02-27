@@ -2,6 +2,7 @@ Mobs that have been successfully altered:
 BreezeEntityMixin: Breeze
 SkeleletonEntityMixin: Bogged, Stray, Skeleton, Wither Skeleton
 ZombieEntityMixin: Zombie, Husk, Drowned, Villager
+DrownedEntityMixin:
 BlazeEntityMixin: Blaze
 SpiderEntityMixin: Cave Spider, Spider
 CreeperEntityMixin: Creeper
@@ -29,4 +30,21 @@ WitherEntityMixin: Wither
 ZoglinEntityMixin: Zoglin
 ??: Zombie Piglin
 EnderDragonEntityMixin: EnderDragon
+brains/CreakingBrainMixin: Creaking
+
+
+Passive mobs that have been hostiled:
+AllayEntityMixin and brains/AllayBrainMixin: None yet, can't get brain to alter and cause it to attack. Don't do, allays are
+
+CowEntityMixin: Cow, Mooshroom
+ChickenEntityMixin: Chicken
+HorseEntityMixin: Horse, Donkey, Mule, Skeleton Horse, Zombie Horse
+PigEntityMixin: Pig
+SheepEntityMixin: Sheep
+RabbitEntityMixin: Rabbit
+SquidEntityMixin: Squid (only damage when players run into them, can't get them to target players)
+TurtleEntityMixin: Turtle
+StriderEntityMixin: Strider
+FishEntityMixin: Fish
+BeeEntityMixin: can't get bees to work, possibly good as it would kill all the bees as they die once they sting
 

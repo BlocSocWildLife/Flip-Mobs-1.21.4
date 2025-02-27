@@ -10,6 +10,7 @@
 		"BlazeEntityMixin",
 		"SpiderEntityMixin",
 		"CreeperEntityMixin",
+		"DrownedEntityMixin",
 		"GuardianEntityMixin",
 		"EndermanEntityMixin",
 		"EndermiteEntityMixin",
@@ -33,7 +34,26 @@
 		"WitherEntityMixin",
 		"ZoglinEntityMixin",
 		"EnderDragonEntityMixin",
-		"HostileEntityMixin"
+		"brains/CreakingBrainMixin",
+		"HostileEntityMixin",
+
+		"brains/AllayBrainMixin",
+		"AllayEntityMixin",
+		"CowEntityMixin",
+		"ChickenEntityMixin",
+		"HorseEntityMixin",
+		"PigEntityMixin",
+		"SheepEntityMixin",
+		"RabbitEntityMixin",
+		"SquidEntityMixin",
+		"TurtleEntityMixin",
+		"StriderEntityMixin",
+		"FishEntityMixin",
+		"BeeEntityMixin"
+
+	],
+	"accessors": [
+		"BeeEntityAccessor"
 	],
 	"injectors": {
 		"defaultRequire": 1
